@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+*{
+    outline: none;
+}
+
+main{
+    display: flex;
+}
+
+.container_direita{
+    width: 80vw
+}
+
+h1{
+    text-align: center;
+    margin-top: 1em;
+    color: #72383D;
+    margin-bottom: 0.7em;
+}
+
+.cad_mesa{
+    width: 50vw;
+    color: #292922;
+    padding: 2em 3em;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3em;
+    box-shadow: 0px 0px 5px 0px rgb(141, 140, 140);
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form_esquerda div, .form_direita div{
+    margin-bottom: 1.5em;
+}
+
+input{
+    margin-top: 0.5em;
+    border-radius: 5px;
+    padding: 0.6em 0.7em;
+    border: none;
+    background-color: #e6e6e6;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    padding: 0.6em 0.7em;
+   width: 20vw;
+   height: 15vh;
+   border-radius: 5px;
+   resize: none;
+   background-color: #d8d8d8;
+   margin-top: 0.5em;
+}
+
+#npessoa{
+    width: 15vw;
+}
+
+#btn_enviar{
+    height: 7vh;
+    font-weight: 600;
+    font-size: 0.9em;
+    width: 9vw;
+    color: #fff;
+    background-color: #72383D;
+    cursor: pointer;
+}
+
+.h1_mesas{
+    margin-top: 1em;
+}
+
+.container_global{
+    margin: auto;
+    width: 60vw;
+    margin-top: 2em;
+}
+
+.container_mesas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_mesa{
+    width: 25vw;
+    box-shadow: 0px 0px 5px 0px rgb(141, 140, 140);
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+h2{
+    color: #292922;
+}
+
+.card_mesa p{
+    color: #595956;
+    margin-top: 0.2em;
+}
+
+.div_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17vw;
+    margin-top: 1em;
+}
+
+#estado_mesa{
+    color: #fff;
+    width: 8vw;
+    height: 5.5vh;
+    border-radius: 5px;
+    background-color: #72383D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc_img{
+    display: flex;
+    align-items: center;
+}
+
+#img{
+    width: 2vw;
+}
+
+.number {
+    -webkit-appearance: none; 
+    -moz-appearance: textfield; 
+    appearance: textfield; 
+
+}
+
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+    display: none;
+}
+
+.number[type=number] {
+    -moz-appearance: textfield; 
+}

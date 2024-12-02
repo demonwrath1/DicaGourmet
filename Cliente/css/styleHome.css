@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    
+}
+
+:root{
+    --vinho: #72383D;
+    --dourado: #EBB856;
+    --busca: #B0323D;
+    --cinza_busca: #DCDCDC;
+    --branco: #fff;
+    --preto: #000;
+}
+
+body{
+    overflow-x: hidden;
+}
+#nenhumrest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+
+}
+.section_banner{
+    background-color: var(--vinho);
+    margin: 1.5em;
+    border-radius: 40px;
+    margin-bottom: 4em;
+ 
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+.nav_header{
+    width: 50vw;
+}
+
+.ul_header{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.ul_header li a{
+    color: var(--branco);
+    font-size: 11pt;
+}
+
+.principal_section_banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+
+.txt_section_principal{
+    width: 60vw;
+    color: var(--branco);
+    font-size: 1.4em;
+
+}
+.txt_section_principal h1 {
+    margin-bottom: 0.8em;
+}
+
+.txt_especial{
+    color: var(--dourado);
+}
+.img_section_principal{
+    height: 100%;
+}
+
+
+#img_principal{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  
+}
+
+#pesquisa{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 3px 0 0 3px;
+    padding: 1em;
+    
+}
+
+#logo{
+    width: 14vw;
+    height: 6vh;
+}
+.container_pesquisa{
+    display: flex;
+    align-items: center;
+}
+
+.figure_img_pesquisa{
+    height: 5vh;
+    background-color: var(--busca);
+    border-radius: 0 3px 3px 0;
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.figure_img_pesquisa:hover {
+    cursor: pointer;
+}
+#icon_pesquisa{
+    width: 1.3vw;
+   
+}
+
+input:focus{
+    background-color: var(--vinho);
+    width: 20vw;
+}
+
+.nav_categorias{
+    height: 50vh;
+    overflow-y: auto;
+    width: 20vw;
+    scrollbar-color: var(--vinho) #f1f1f1;
+    margin-right: 2em;
+}
+
+.section_categorias{
+    padding: 0 3em;
+    color: #1E1E1E;
+    margin-bottom: 4em;
+}
+
+
+.titulo_recomenda{
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    margin-top: 0.3em;
+    width: 80vw;
+}
+
+.categoria_h2{
+   margin-bottom: 2em;
+   color: #232222;
+}
+.nav_categorias ul li{
+    margin-bottom: 1.7em;
+}
+
+.nav_categorias ul li a{
+    display: flex;
+    align-items: center;
+    color: #1E1E1E;
+    font-weight: 500;
+}
+
+.comida_img{
+    width: 2.5vw;
+    margin-right: 1em;
+}
+
+.section_recomendacao{
+    width: 100%;
+    padding: 0 3em;
+    margin-bottom: 6em;
+    margin-top: 5em;
+}
+
+.titulo_recomenda{
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 1.7em;
+    width: 100vw;
+    margin-top: 4em;
+}
+
+.div_recomendacao{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8em;
+    margin-bottom: 2em;
+}
+
+.icon_recomenda{
+    width: 3.5vw;
+    margin-right: 1em;
+}
+
+.icon_recomenda_estrela{
+    width: 6vw;
+    margin-right: 1em;
+}
+
+.cad_recomenda{
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    color: #696969;
+    -webkit-box-shadow: 10px -1px 45px 5px rgba(0,0,0,0.20);
+-moz-box-shadow: 10px -1px 45px 5px rgba(0,0,0,0.20);
+box-shadow: 10px -1px 45px 5px rgba(0,0,0,0.20);
+    padding: 1.5em 1.6em;
+    border-radius: 10px;
+}
+
+.cad_recomenda div h3{
+    color: #515151;
+}
+
+.titulo_proxima_voce{
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 1.8em;
+}
+input[type="search"]:focus {
+background-color: white;
+}
+
+.section_categorias {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.container_categorias {
+    display: flex;
+  overflow: auto;
+    max-width: 68vw;
+    justify-content: space-between;
+    min-width: 45vw;
+    margin: 0 auto;
+    gap: 2em;
+    padding-bottom: 4.5em;
+}
+
+.container_categorias::-webkit-scrollbar {
+ display: block;
+ 
+ 
+   
+}
+.container_categorias::-webkit-scrollbar-track{
+    margin-top: 1em;
+    background-color: var(--cinza_busca);
+}
+.container_categorias::-webkit-scrollbar-thumb {
+    background-color: var(--vinho)!important;
+     /* Arredondar os cantos do polegar */
+   
+  }
+  .container_categorias::-webkit-scrollbar-button {
+    display: block;
+    background-color: var(--cinza_busca); /* Cor das setas */
+    width: 15px; /* Largura das setas */
+    height: 15px; /* Altura das setas */
+   
+  }
+  .container_categorias::-webkit-scrollbar-button {
+    
+    width: 12px;
+    height: 12px;
+    display: block; /* Exibir os botões */
+  
+  }
+  
+  /* Estilo dos botões de rolagem quando o mouse passa sobre eles */
+
+  
+  /* Definir setas (direções) nos botões */
+  .container_categorias::-webkit-scrollbar-button:single-button {
+  
+  }
+  
+ 
+  
+  .container_categorias::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    background-image: url('../img/jogar (1).png'); /* Substitua pelo caminho da sua seta */
+    background-size: 8px 8px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .container_categorias::-webkit-scrollbar-button:single-button:horizontal:increment {
+    background-image: url('../img/jogar.png'); /* Substitua pelo caminho da sua seta */
+    background-size: 8px 8px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.img-card {
+       position: relative;
+        background-image: url('../img/restaurante1.png'); /* Valor padrão */
+        filter: brightness(30%);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 2em;
+    
+}.img-card-B {
+    position: relative;
+    
+     filter: brightness(30%);
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     border-radius: 2em;
+ 
+}
+
+.cardCategoria {
+    width: 20em;
+    height: 29.5em;
+    flex: 0 0 auto;
+    position: relative;
+    border-radius: 2em;
+    -webkit-box-shadow: 4px 2px 20px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 4px 2px 20px 0px rgba(0,0,0,0.33);
+    box-shadow: 4px 2px 20px 0px rgba(0,0,0,0.30);
+    overflow: hidden;
+}
+
+
+.enderecocard {
+display: flex;
+align-items: center;
+position: absolute;
+color: white;
+z-index: 1;
+line-height: 1.3em;
+width: 20vw;
+height: 25vh;
+padding: 0 2% 2% 2%;
+font-size: 0.9em;
+font-family: "Poppins, sans-serif";
+margin-top: 20em;
+}
+#mapa {
+    width: 1.8em;
+   
+}
+.estrelas {
+   margin-bottom: 8em;
+   padding: 1em;
+}
+.h2_card {
+   text-align: center;
+   position:absolute;
+   padding: 0.9em;
+   margin-bottom: 2em;
+    
+    
+
+}
+.div_endereco {
+    position: absolute; /* Adicione isto */
+    top: 7em; /* Ajuste conforme necessário */
+    padding: 1em; /* Ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    width: fit-content; /* Mantenha o tamanho ajustado ao conteúdo */
+    color: white; /* Ou qualquer cor desejada */
+    width: 15vw;    
+}
+.imgseg {
+    background-image: none;
+    
+}
+#encontre {
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 1.8em;
+
+}
+.section_proximo_voce {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    padding: 0.2em;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    padding-left: 1.7em;
+    
+}
+
+.enderec {
+    margin-left: 1em;
+    width: fit-content; 
+}
+.card {
+    border-radius: 1em;    
+    -webkit-box-shadow: 4px 2px 8px 5px rgba(0,0,0,0.16);
+    -moz-box-shadow: 4px 2px 8px 5px rgba(0,0,0,0.16);
+    box-shadow: 4px 2px 8px 5px rgba(0,0,0,0.16);
+    margin-bottom: 2.8em;
+    width: 27vw;
+    height: 60vh;
+
+   
+}
+.card:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s ease;
+}
+.reservarfavoritar {
+    display: flex;
+    justify-content: space-between ; 
+    padding: 2em;
+   
+  
+}
+.reservarfavoritar button {
+    background-color: var(--vinho);
+    color: white;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 5px;
+    
+}
+#favoritar {
+        width: 1.5em;
+        height: 1.3em;
+        margin-top: 1.1em;
+}
+
+#imagemcard{
+    width: 26vw;
+    height: 28vh;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+
+
+
+.categoriasrestaurante{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5em;
+    align-items: center;
+    gap: 1.2em;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.favoritar {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 1.7em;
+    height: 1.7em;
+    margin-top: 1em;
+}
+
+.favoritar:hover {
+    transform: scale(1.1);
+    
+}
+
+  
+  
+  
+  #reservar:hover {
+    cursor: pointer;
+  }
+
+.p_relatorio{
+    color: #707070;
+    width: 26vw;
+    font-size: 11pt;
+
+}
+
+.p_relatorio a{
+    font-style: italic;
+    text-decoration: underline;
+    color: #666666;
+    color: #232222;
+}

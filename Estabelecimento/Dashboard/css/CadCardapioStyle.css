@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+*{
+    outline: none;
+}
+
+main{
+    display: flex;
+}
+
+.container_direita{
+    width: 80vw
+}
+
+h1{
+    text-align: center;
+    margin-top: 1em;
+    color: #72383D;
+    margin-bottom: 0.7em;
+}
+
+.cad_prato{
+    width: 50vw;
+    background-color: #72383D;
+    padding: 2em 3em;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    margin: auto;
+    margin-bottom: 5em;
+}
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form_esquerda div, .form_direita div{
+    margin-bottom: 1.5em;
+}
+
+input{
+    margin-top: 0.5em;
+    border-radius: 5px;
+    padding: 0.4em 0.5em;
+    border: none;
+}
+
+#nome{
+    width: 20vw;
+}
+
+textarea{
+     padding: 0.4em 0.5em;
+    width: 20vw;
+    height: 26vh;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    resize: none;
+}
+
+.form_esquerda div, .form_direita div{
+    display: flex;
+    flex-direction: column;
+}
+
+#preco{
+    width: 10vw;
+}
+
+#img{
+    display: none;
+    
+}
+
+.pratos{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    margin: auto;
+    background-color: #292929;
+    color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.img_prato{
+    width: 4vw;
+    height: 2vh;
+    border-radius: 1em!important;
+
+}
+
+
+.desc_prato{
+    width: 30vw;
+}
+
+.desc_prato p{
+    font-size: 0.8em;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+.btn_func{
+    width: 13vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_editar, .btn_remover, .btn_salvar{
+    width: 6vw;
+    height: 5vh;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.btn_editar, .btn_salvar{
+    background-color: #72383D;
+    color: #fff;
+}
+
+.btn_remover{
+    background-color: #fff;
+    color: #72383D;
+}
+
+#titulo_cardapio{
+    margin-bottom: 0.7em;
+}
+
+.foto_session{
+    display: flex;
+    flex-direction: column;
+}
+
+#foto_img{
+    width: 10vw!important;
+    height: 7vw;
+    margin-top: 0.2em;
+    cursor: pointer;
+}
+
+#cad_btn{
+    width: 8vw;
+    height: 6vh;
+    background-color: #292929;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagination {
+    width: 50vw;
+    text-align: right;
+    margin: 1em auto;
+}
+
+
+
+#prev, #next{
+    width: 2.5vw;
+    height: 5vh;
+    background-color: #fff;
+    border: 1px solid #72383D;
+    color: #72383D;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+    
+}
+
+#next:hover, #prev:hover{
+    background-color: #72383D;
+    color: #fff;
+}
+
+#next{
+    margin-left: 0.3em;
+}
+

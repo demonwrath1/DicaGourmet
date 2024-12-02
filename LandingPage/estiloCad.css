@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --vinho: #72383D;
+    --cinza: #EBEBEB;
+}
+
+body{
+    width: 100%;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section_esquerda{
+    display: flex;
+}
+
+#txt_login{
+    border-left: 4px solid #fff;
+    padding-left: 0.5em;
+    padding-top: 0.4em;
+}
+
+#txt_login a{
+    color: #fff;
+    padding-left: 0.3em;
+}
+
+.div_section_esquerda{
+    min-height: 100vh;
+    width: 35vw;
+    background-color: var(--vinho);
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+}
+
+#close_img{
+    width: 1.3vw;
+    position: absolute;
+    top: 2em;
+}
+
+.container_texto_section{
+    width: 60vw;
+    margin-left: 3em;
+}
+
+.titulo_section_esquerda{
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+.p_section_esquerda{
+    font-size: 1.2em;
+    border-left: 4px solid #fff;
+    padding-left: 0.5em;
+}
+
+#img_wave{
+    height: 100vh;
+    
+}
+
+.section_direita{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo_section_direita{
+    color: #454545;
+    margin-bottom: 2em;
+    font-size: 2.4em;
+}
+
+.container_cad{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+i{
+    width: 90vw;
+    color: var(--vinho)
+}
+
+.a {
+    width: 20vw;
+    box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.39);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    position: relative; /* Para posicionar os pseudo-elementos */
+    overflow: hidden; /* Para evitar que as bordas saiam do card */
+}
+
+.a::before,
+.a::after,
+.a .border-left,
+.a .border-right {
+    content: '';
+    position: absolute;
+    background-color: var(--vinho);
+    transition: all 0.5s ease;
+    opacity: 0; /* Inicia invisível */
+}
+
+.a::before { /* Borda superior */
+    width: 100%;
+    height: 2px; /* Espessura da borda */
+    top: 0;
+    left: 0;
+}
+
+.a::after { /* Borda inferior */
+    width: 100%;
+    height: 2px; /* Espessura da borda */
+    bottom: 0;
+    left: 0;
+}
+
+.a .border-left { /* Borda esquerda */
+    width: 2px; /* Espessura da borda */
+    height: 100%; /* Altura total do card */
+    left: 0;
+    top: 0;
+}
+
+.a .border-right { /* Borda direita */
+    width: 2px; /* Espessura da borda */
+    height: 100%; /* Altura total do card */
+    right: 0;
+    top: 0;
+}
+
+/* Animações para as bordas */
+.a:hover::before,
+.a:hover::after,
+.a:hover .border-left,
+.a:hover .border-right {
+    opacity: 1; /* Fica visível ao passar o mouse */
+}
+
+.a:hover::before {
+    animation: drawTop 0.5s forwards; /* Animação para o topo */
+}
+
+.a:hover::after {
+    animation: drawBottom 0.5s forwards; /* Animação para a base */
+}
+
+.a:hover .border-left {
+    animation: drawLeft 0.5s forwards; /* Animação para a esquerda */
+}
+
+.a:hover .border-right {
+    animation: drawRight 0.5s forwards; /* Animação para a direita */
+}
+
+/* Definindo as animações */
+@keyframes drawTop {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+
+@keyframes drawBottom {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+
+@keyframes drawLeft {
+    0% { transform: scaleY(0); }
+    100% { transform: scaleY(1); }
+}
+
+@keyframes drawRight {
+    0% { transform: scaleY(0); }
+    100% { transform: scaleY(1); }
+}
+
+
+/*
+.a:hover{
+    border: 3px solid var(--vinho);
+    border-radius: 10px;
+    
+}*/
+
+.img_cad{
+    width: 6vw;
+    margin-bottom: 2em;
+}
+
+.a{
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    width: 20vw;
+    height: 50vh;
+}
+
+.p_section_direita{
+    width: 18vw;
+
+}
+
+
+@media (max-width: 1700px){
+    .div_section_esquerda{
+        min-height: 100vh;
+        width: 32vw;
+    }
+
+    .section_direita{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 1600px){
+    .img_cad{
+        width: 6vw;
+    }
+
+    .a{
+        width: 22vw;
+    }
+}
+
+@media (max-width:1300px){
+    .div_section_esquerda{
+        width: 28vw;
+    }
+
+    .titulo_section_esquerda{
+        font-size: 2.3em;
+    }
+
+    .titulo_section_direita{
+        font-size: 2.3em;
+    }
+
+    .section_direita{
+        width: 90vw;
+    }
+
+    .container_cad{
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+:root{
+    --vinho: #72383D;
+    --dourado: #EBB856;
+    --busca: #B0323D;
+    --cinza_busca: #DCDCDC;
+    --branco: #fff;
+    --preto: #000;
+}
+
+body{
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    background-color: #fff;
+    width: 80vw;
+    min-height: 40vh;
+    border-radius: 20px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+#a_logo{
+    height: 2vh;
+}
+
+.header_main{
+    display: flex;
+    align-items: center;
+    padding:1.5em 2em;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#div_logo{
+    display: flex;
+    align-items: center;
+}
+
+
+
+#logo{
+    width:15vw;
+    margin-left: 0.7em;
+}
+
+#seta{
+    margin-bottom: 1.2em;
+}
+
+.container_geral {
+    width: 80%;
+    margin: auto;
+}
+
+#nome_rest{
+    color: #B0323D;
+    font-size: 18pt;
+}
+
+.end_info{
+    display: flex;
+    width: 15vw;
+
+}
+
+#icon_local{
+    width: 1.2vw;
+    height: 1.2vw;
+    margin-top: 0.3em;
+}
+
+.end_info p{
+margin-left: 0.5em;
+color: #575757;
+font-size: 10pt;
+}
+
+form{
+}
+
+.container_form{
+    margin-bottom: 2em;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    background-color: #DCDCDC;
+    width: 60vw;
+}
+
+.header_form{
+    display: flex;
+    align-items: center;
+    color: #434343;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    width: 11vw;
+    font-size: 11pt;
+    justify-content: space-between;
+}
+
+#div_hora{
+    margin-top: 0.7em;
+}
+
+.header_form div{
+    display: flex;
+}
+
+.header_form div p{
+    margin-left: 0.5em;
+}
+
+.card_mesa{
+    display: flex;
+    background-color: #7e4347;
+    padding: 1.5em 2em;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 5px;
+    height: 10vh;
+    align-items: center;
+    
+    margin-bottom: 1.2em;
+}
+
+.container_infos{
+    
+}
+
+#mesa{
+    display: none;
+}
+
+#label_user{
+    display: flex;
+    align-items: center;
+}
+
+#img_user{
+    margin-right: 0.3em;
+    width: 1.2vw;
+}
+.btn_reserva {
+    background-color: #fff;
+    color: #72383D;
+    padding: 0.6em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 2vw;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + .btn_reserva {
+    background-color: #292929;
+    color: #ffffff;
+}
+
+#btn_avancar {
+    display: block;
+    margin: auto;
+    width: 15vw;
+    height: 7vh;
+    border-radius: 10px;
+    background-color: #72383D;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+    font-size: 13pt;
+}
+
+#btn_avancar:hover {
+    background-color: #292929;
+}

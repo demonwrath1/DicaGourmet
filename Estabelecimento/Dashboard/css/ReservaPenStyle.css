@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    text-align: center;
+    margin-top: 1em;
+    color: #72383D;
+    margin-bottom: 1.5em;
+}
+
+.container_direita{
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card_reserva{
+    width: 30vw;
+    box-shadow: 4px 11px 30px 0px rgba(109,105,105,0.75);
+-webkit-box-shadow: 4px 11px 30px 0px rgba(109,105,105,0.75);
+-moz-box-shadow: 4px 11px 30px 0px rgba(109,105,105,0.75);
+padding: 2em 1.6em;
+margin-bottom: 2em;
+border-radius: 10px;
+
+}
+
+.desc_mesa{
+    color: rgb(66, 65, 65);
+    font-size: 0.8em;
+    margin-top: 0.3em;
+}
+
+.func{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.btn_aceita, .btn_rejeita{
+    width: 6.5vw;
+    height: 5.5vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_aceita:hover{
+    background-color: #572a2d;
+}
+
+.btn_rejeita:hover{
+    background-color: rgb(23, 21, 21);
+}
+
+.btn_aceita{
+    background-color: #72383D;
+    color: #fff;
+}
+
+.btn_rejeita{
+    background-color: rgb(67, 62, 62);
+    color: #fff;
+}
+
+.func > div{
+    display: flex;
+    align-items: center;
+}
+
+.func div img{
+    width: 1.7vw;
+}
